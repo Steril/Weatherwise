@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@sendinblue/client": "^5.5.1",
+  "@sendinblue/client": "*",
     "axios": "^0.24.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
