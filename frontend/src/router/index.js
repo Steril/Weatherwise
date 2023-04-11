@@ -1,21 +1,34 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-import Home from '@/views/Home.vue';
-import Campaigns from '@/views/Campaigns.vue';
+import VueRouter from 'vue-router';
+import CampaignList from '@/views/CampaignList.vue';
+import CampaignDetail from '@/views/CampaignDetail.vue';
+import Login from '@/views/Login.vue';
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/campaigns',
-      name: 'campaigns',
-      component: Campaigns,
-    },
-  ],
+const routes = [
+  {
+    path: '/',
+    name: 'CampaignList',
+    component: CampaignList,
+  },
+  {
+    path: '/campaigns/:id',
+    name: 'CampaignDetail',
+    component: CampaignDetail,
+    props: true,
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+  },
+];
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes,
 });
+
+export default router;
