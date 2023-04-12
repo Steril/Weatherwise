@@ -1,0 +1,29 @@
+npm start
+
+npm ci
+
+npm install
+
+scp root@10.114.0.2:/root/Weatherwise/package-lock.json ~/Downloads/
+scp root@10.114.0.2:/root/Weatherwise/package-lock.json ~/Downloads/
+
+scp root@10.114.0.2:/root/Weatherwise/package-lock.json ~/Downloads/
+
+165.232.122.115
+scp root@165.232.122.115:/root/Weatherwise/package-lock.json /mnt/c/Users/kulha/OneDrive/Downloads/
+
+scp root@165.232.122.115:/root/Weatherwise/package-lock.json C:\Users\kulha\OneDrive\Downloads
+
+
+fatal: Exiting because of unfinished merge.
+root@ubuntu-s-1vcpu-512mb-10gb-fra1-01:~/Weatherwise# git add .
+root@ubuntu-s-1vcpu-512mb-10gb-fra1-01:~/Weatherwise# git commit -m "Commit message"
+[main 11c6614] Commit message
+root@ubuntu-s-1vcpu-512mb-10gb-fra1-01:~/Weatherwise# ~
+-bash: /root: Is a directory
+root@ubuntu-s-1vcpu-512mb-10gb-fra1-01:~/Weatherwise# git merge --continue
+fatal: There is no merge in progress (MERGE_HEAD missing).
+
+
+
+
