@@ -1,11 +1,12 @@
 module.exports = {
+  outputDir: '../backend/public',
   devServer: {
     proxy: {
-      '/api': {
+      '^/api': {
         target: 'http://localhost:3000',
         ws: true,
-        changeOrigin: true,
-      },
-    },
-  },
-};
+        changeOrigin: true
+      }
+    }
+  }
+}
