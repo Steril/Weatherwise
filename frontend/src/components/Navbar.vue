@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/logo.png" alt="Logo" width="112" height="28">
+        <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="Logo" width="112" height="28">
       </a>
       <a role="button" class="navbar-burger" :class="{ 'is-active': isActive }" @click="toggleMenu" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import { logout } from '@/api/auth';
+
 export default {
   name: 'Navbar',
   data() {
@@ -58,6 +60,7 @@ export default {
       localStorage.removeItem('user');
       localStorage.removeItem('token');
       this.$router.push('/login');
+      logout();
     },
   },
 };
