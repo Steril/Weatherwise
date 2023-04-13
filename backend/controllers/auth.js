@@ -1,7 +1,7 @@
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const User = require('../models/user');
-const { JWT_SECRET } = require('../config/env');
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import User from '../models/user';
+import { JWT_SECRET } from '../config/env';
 
 async function login(req, res, next) {
   try {
@@ -46,4 +46,4 @@ async function login(req, res, next) {
   }
 }
 
-module.exports = { login };
+export default { login };

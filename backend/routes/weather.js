@@ -1,7 +1,7 @@
-const express = require('express');
-const { authenticateUser } = require('../auth/auth');
-const Weather = require('../models/weather');
-const { getWeatherForecast } = require('../services/weather');
+import express from 'express';
+import { authenticateUser } from '../auth/auth.js';
+import Weather from '../models/weather.js';
+import { getWeatherForecast } from '../services/weather.js';
 
 const router = express.Router();
 
@@ -38,4 +38,4 @@ router.get('/', authenticateUser, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const campaignSchema = new mongoose.Schema({
   name: {
@@ -31,4 +31,4 @@ const campaignSchema = new mongoose.Schema({
 
 const Campaign = mongoose.model('Campaign', campaignSchema);
 
-module.exports = Campaign;
+export default Campaign;

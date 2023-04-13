@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 async function triggerCampaign(apiKey, campaignId) {
   try {
@@ -14,4 +14,4 @@ async function triggerCampaign(apiKey, campaignId) {
   }
 }
 
-module.exports = { triggerCampaign };
+export { triggerCampaign };

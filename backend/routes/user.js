@@ -1,6 +1,6 @@
-const express = require('express');
-const { authenticateUser, authorizeAdmin } = require('../auth/auth');
-const User = require('../models/user');
+import express from 'express';
+import { authenticateUser, authorizeAdmin } from '../auth/auth.js';
+import User from '../models/user.js';
 
 const router = express.Router();
 
@@ -81,4 +81,4 @@ router.delete('/:id', authenticateUser, authorizeAdmin, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

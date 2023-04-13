@@ -1,8 +1,8 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const { authenticateUser } = require('../middlewares/auth');
-const { triggerCampaign } = require('../services/sendinblue');
-const Campaign = require('../models/campaign');
+import { authenticateUser } from '../middlewares/auth';
+import { triggerCampaign } from '../services/sendinblue';
+import Campaign from '../models/campaign';
 
 // POST /campaigns/:id/trigger
 // Trigger a campaign
@@ -32,4 +32,4 @@ router.post('/:id/trigger', authenticateUser, async (req, res, next) => {
   }
 });
 
-module.exports = router;
+export default router;

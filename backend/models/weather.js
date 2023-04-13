@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const weatherSchema = new mongoose.Schema({
   location: { type: String, required: true },
@@ -13,4 +13,4 @@ const weatherSchema = new mongoose.Schema({
 
 const Weather = mongoose.model('Weather', weatherSchema);
 
-module.exports = Weather;
+export default Weather;

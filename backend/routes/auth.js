@@ -1,5 +1,5 @@
-const jwt = require('jsonwebtoken');
-const { JWT_SECRET } = require('../config/env');
+import jwt from 'jsonwebtoken';
+import { JWT_SECRET } from '../config/env';
 
 function generateToken(user) {
   const payload = {
@@ -41,4 +41,4 @@ function authorizeAdmin(req, res, next) {
   next();
 }
 
-module.exports = { generateToken, authenticateUser, authorizeAdmin };
+export { generateToken, authenticateUser, authorizeAdmin };

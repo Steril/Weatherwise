@@ -1,9 +1,8 @@
-const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
-const JwtStrategy = require('passport-jwt').Strategy;
-const ExtractJwt = require('passport-jwt').ExtractJwt;
-const User = require('../models/user');
-const { JWT_SECRET } = require('./env');
+import passport from 'passport';
+import { Strategy as LocalStrategy } from 'passport-local';
+import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
+import User from '../models/user';
+import { JWT_SECRET } from './env';
 
 // Local strategy for username/password login
 passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, password, done) => {
