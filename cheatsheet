@@ -41,6 +41,8 @@ git config --global --replace-all user.name "Josef"
 
 git rm --cached package-lock.json
 
+git add .
+
 git add package-lock.json
 
 git commit -m "Overwrite remote package-lock.json with local one"
