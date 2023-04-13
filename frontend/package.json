@@ -1,15 +1,9 @@
-"scripts": {
-  "build": "webpack --mode production"
-}
-
 {
   "name": "weather-campaigns-app",
   "version": "1.0.0",
   "description": "A web app for creating and scheduling email campaigns based on weather conditions.",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "axios": "^0.21.1",

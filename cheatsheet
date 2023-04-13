@@ -39,6 +39,18 @@ Host github.com
 git config --global --replace-all user.name "Josef"
 
 
+git rm --cached package-lock.json
+
+git add package-lock.json
+
+git commit -m "Overwrite remote package-lock.json with local one"
+
+git push origin main
+
+
+
+
+
 
 
 
