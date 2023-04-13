@@ -5,9 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --entry=src/main.js",
-    "lint": "vue-cli-service lint"
+    "start": "node server.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@sendinblue/client": "^3.1.0",
     "axios": "^0.24.0",
     "bcryptjs": "^2.4.3",
@@ -45,4 +46,44 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.13.2"
   }
+=======
+        "@sendinblue/client": "^3.1.0",
+        "axios": "^0.24.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.2",
+        "express-handlebars": "^5.3.4",
+        "express-session": "^1.17.3",
+        "jsonwebtoken": "^9.0.0",
+        "knex": "^2.4.2",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1",
+        "nodemailer": "^6.7.2",
+        "nodemailer-sendinblue-transport": "^1.0.0",
+        "passport": "^0.6.0",
+        "passport-local": "^1.0.0",
+        "vue": "^2.6.14",
+        "vue-router": "^3.5.2",
+        "vuex": "^3.6.2"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/preset-env": "^7.16.8",
+        "@vue/cli-plugin-babel": "^5.0.0",
+        "@vue/cli-plugin-eslint": "^5.0.0",
+        "@vue/cli-service": "^5.0.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.3",
+        "eslint": "^8.5.0",
+        "eslint-plugin-vue": "^7.x",
+        "vue-loader": "^15.9.8",
+        "vue-template-compiler": "^2.6.14",
+        "webpack": "^5.62.3",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.13.2"
+      }
+>>>>>>> f5c038fb0201e4d26e37891e3a05f8a4ba92a34f
 }
