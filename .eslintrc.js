@@ -1,10 +1,15 @@
 module.exports = {
+  root: true,
+  env: {
+    node: true,
+  },
   extends: [
+    'plugin:vue/essential',
     '@vue/prettier',
-    'eslint:recommended',
-    'plugin:vue/recommended',
-    'prettier',
+    '@vue/typescript/recommended',
   ],
-  plugins: ['vue'],
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
   rules: {},
 };

@@ -22,16 +22,24 @@ const mutations = {
 
 const actions = {
   async login({ commit }, { email, password }) {
-    const response = await login(email, password);
-    const { user, token } = response.data;
+    try {
+      const response = await login(email, password);
+      const { user, token } = response.data;
 
-    commit('setUser', user);
-    commit('setToken', token);
+      commit('setUser', user);
+      commit('setToken', token);
+    } catch (error) {
+      console.error(error);
+    }
   },
-  logout({ commit }) {
-    commit('clearUser');
-    commit('clearToken');
-    logout();
+  async logout({ commit }) {
+    try {
+      await logout();
+      commit('clearUser');
+      commit('clearToken');
+    } catch (error) {
+      console.error(error);
+    }
   },
 };
 
