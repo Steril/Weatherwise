@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import CampaignList from '@/views/CampaignList.vue';
-import CampaignDetail from '@/views/CampaignDetail.vue';
-import Login from '@/views/Login.vue';
+import CampaignList from '@/frontend/src/views/CampaignList.vue';
+import CampaignDetail from '@/frontend/src/views/CampaignDetail.vue';
+import Login from '@/frontend/src/views/Login.vue';
 
 Vue.use(VueRouter);
 
