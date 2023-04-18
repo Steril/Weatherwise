@@ -41,7 +41,6 @@
     "@vue/eslint-config-prettier": "^7.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
-    "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^7.x",
     "vue-loader": "^15.9.8",
