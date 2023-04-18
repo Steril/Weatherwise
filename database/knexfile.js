@@ -1,8 +1,6 @@
-const config = require('./config');
+import config from './config.js';
 
-
-module.exports = {
-
+export default {
   development: {
     client: 'pg',
     connection: {
@@ -31,5 +29,4 @@ module.exports = {
       directory: __dirname + '/seeds'
     }
   }
-
 };
